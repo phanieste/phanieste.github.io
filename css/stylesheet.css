@@ -1,0 +1,303 @@
+/* -------------------------------
+Stylesheet for personal website,
+by Stephanie Huang
+February 2014 
+-------------------------------- */ 
+
+@font-face {
+	font-family: "Century Gothic";
+	src: url("../fonts/gothic.ttf");
+}
+@font-face {
+	font-family: "Century Gothic";
+	src: url("../fonts/gothicb.ttf");
+	font-weight: bold;
+}
+@font-face {
+	font-family: Muli;
+	src: url("../fonts/muli.ttf");
+}
+@font-face {
+	font-family: Muli;
+	src: url("../fonts/muli-bold.ttf");
+	font-weight: bold;
+}
+@font-face {
+	font-family: Muli SemiBold;
+	src: url("../fonts/muli-semibold.ttf");
+}
+
+html, body, p, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background: url("../images/bg1dark.jpg") no-repeat fixed center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color: #242424;
+	color: #fff;
+	font-family: "Ubuntu",sans-serif;
+	margin-bottom: 75px;
+}
+
+/* --- NAVIGATION --- */
+
+@media (min-width: 480px) {
+	.collapse, .navbar-collapse {
+		display: block !important;
+		position: relative;
+		visibility: visible;
+	}
+	.navbar-header {
+		display: none;
+	}
+}
+
+nav {
+	color: #fff;
+	font-family: "Century Gothic";
+	font-size: 1.5em;
+	letter-spacing: .15em;
+	position: relative;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+nav ul.nav {
+	padding-top: 1em;
+	text-align: center;
+}
+
+nav ul.nav > li {
+	display: inline-block;
+}
+
+nav ul.nav a {
+	color: #fff;
+	opacity: .8;
+	padding: .8em;
+	text-decoration: none;
+	transition: opacity .25s;
+}
+
+nav ul.nav a:hover, .on {
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	opacity: .5;
+}
+
+@media (max-width: 480px) {
+	nav {
+		font-size: 1em;
+	}
+	nav ul.nav {
+		padding: 0;
+	}
+	nav ul.nav > li {
+		display: block;
+	}
+	nav ul.nav a {
+		padding: 0;
+		transition: none;
+	}
+
+	nav ul.nav a:hover {
+		background-color: #eee;
+		border: none;
+		color: #000;
+		cursor: pointer;
+		opacity: .5;
+	}
+
+	nav ul.nav a.on {
+		background-color: #eee;
+		border: none;
+		color: #000;
+	}
+}
+
+.icon-bar {
+	background-color: #fff;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}
+
+.navbar-header {
+	width: 100%;
+}
+
+/* --- CONTENT --- */
+
+.content {
+	text-align: center;
+	width: 100%;
+}
+
+.content a {
+	color: #fff;
+}
+
+.content a:hover {
+	opacity: .8;
+}
+
+.content h1 {
+	font-size: 1.4em;
+	font-weight: 500;
+	letter-spacing: .1em;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 90%;
+}
+
+.content p {
+	color: #ddd;
+	font-weight: normal;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	line-height: 1.5em;
+	padding: 0;
+	text-transform: none;
+}
+
+.content > .text {
+	display: none;
+	text-align: left;
+	margin: auto;
+	padding: 2em 0;
+}
+
+.content > .text > .hr {
+	background-color: #fff;
+	display: block;
+	border-radius: 1px;
+	height: 1px;
+	width: 50px;
+	margin: 1em auto;
+}
+
+@media (min-width: 768px) {
+	.content > .text {
+		padding: 4em 0;
+		width: 600px;
+	}
+}
+
+/* --- MAIN --- */
+
+#mast-text {
+	display: block;
+	height: 100%;
+	opacity: .8;
+	padding-top: 15%;
+	text-align: center;
+	visibility: visible;
+	width: 100%;
+}
+
+#mast-text b {
+	font: 7.5em "Archivo Black",sans-serif;
+	line-height: 1.15em;
+	text-transform: uppercase;
+}
+
+#mast-text i {
+	border-top: 2px solid #fff;
+	font: 2em "Georgia",serif;
+	font-style: italic;
+	padding-top: .1em;
+}
+
+#mast-text a {
+	color: #fff;
+	font: 1.5em "Century Gothic","Arial",sans-serif;
+	line-height: 1.3em;
+	padding: 0 .8em;
+	text-decoration: none;
+	transition: opacity .25s;
+}
+
+#mast-text a:hover {
+	opacity: .5;
+}
+
+@media (max-width: 768px) {
+	#mast-text {
+		font-size: .6em;
+	}
+}
+
+@media (max-width: 480px) {
+	#mast-text {
+		font-size: .5em;
+		padding-top: 40%;
+	}
+}
+
+/* --- FOOTER --- */
+
+footer {
+	bottom: 0;
+	font-size: 1em;
+	height: 75px;
+	opacity: .5;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+@media (max-width: 480px) {
+	footer {
+		font-size: .7em;
+	}
+}
+
+.social {
+	color: #eee;
+	font-size: 31px;
+	width: 31px;
+}
+
+.circle {
+	border: none;
+	border-radius: 31px;
+	color: #eee;
+}
+
+.github {
+	background-position: -119px 0;
+}
+
+.github:hover {
+	background-position: -119px -76px;
+}
+
+.flickr {
+	background-position: -119px -40px;
+}
+
+.flickr:hover {
+	background-position: -119px -116px;
+}
+
+.linkedin {
+	background-position: -158px -40px;
+}
+
+.linkedin:hover {
+	background-position: -158px -116px;
+}

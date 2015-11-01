@@ -249,6 +249,12 @@ nav ul.nav a:hover, .on {
 }
 
 /* --- PROJECTS --- */
+@media (min-width: 768px) {
+	.text#projects {
+		width: 750px;
+	}
+}
+
 .nopadding {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -258,7 +264,7 @@ nav ul.nav a:hover, .on {
 	display: none;
 	position: absolute;
 	top: 0;
-	padding-top: .5em;
+	padding: .5em;
 	background: rgba(0,0,0,.95);
 	width: 100%;
 	height: 100%;

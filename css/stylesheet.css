@@ -320,26 +320,12 @@ footer {
 	color: #eee;
 }
 
-.github {
-	background-position: -119px 0;
+#github:hover {
+	color: #4183c4;
 }
-
-.github:hover {
-	background-position: -119px -76px;
+#flickr:hover {
+	color: #ff0084;
 }
-
-.flickr {
-	background-position: -119px -40px;
-}
-
-.flickr:hover {
-	background-position: -119px -116px;
-}
-
-.linkedin {
-	background-position: -158px -40px;
-}
-
-.linkedin:hover {
-	background-position: -158px -116px;
+#linkedin:hover {
+	color: #86888a;
 }

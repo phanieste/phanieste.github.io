@@ -248,6 +248,42 @@ nav ul.nav a:hover, .on {
 	}
 }
 
+/* --- PROJECTS --- */
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.proj-caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	padding-top: .5em;
+	background: rgba(0,0,0,.95);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: .9em;
+}
+.proj-caption h1 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.proj-caption h2 {
+	font-size: .9em;
+	font-style: italic;
+	font-weight: normal;
+}
+.cap-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.proj-slide a {
+	text-decoration: none;
+}
+
 /* --- FOOTER --- */
 
 footer {

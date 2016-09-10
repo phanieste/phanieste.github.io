@@ -1,16 +1,15 @@
 /* -------------------------------
 Stylesheet for personal website,
 by Stephanie Huang
-February 2014 
 -------------------------------- */ 
 
 @font-face {
 	font-family: "Century Gothic";
-	src: url("../fonts/gothic.ttf");
+	src: url("../fonts/GOTHIC.TTF");
 }
 @font-face {
 	font-family: "Century Gothic";
-	src: url("../fonts/gothicb.ttf");
+	src: url("../fonts/GOTHICB.TTF");
 	font-weight: bold;
 }
 @font-face {
@@ -38,7 +37,7 @@ html {
 }
 
 body {
-	background: url("../images/bg1dark.jpg") no-repeat fixed center;
+	background: url("../images/bg-large.jpg") no-repeat fixed center;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -47,6 +46,12 @@ body {
 	color: #fff;
 	font-family: "Ubuntu",sans-serif;
 	margin-bottom: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+        body {
+                background: url("../images/bg-small.jpg") no-repeat fixed center;
+        }
 }
 
 /* --- NAVIGATION --- */
@@ -64,7 +69,7 @@ body {
 
 nav {
 	color: #fff;
-	font-family: "Century Gothic";
+	font-family: "Century Gothic",;
 	font-size: 1.5em;
 	letter-spacing: .15em;
 	position: relative;
@@ -159,6 +164,7 @@ nav ul.nav a:hover, .on {
 	font-weight: 500;
 	letter-spacing: .1em;
 	margin: auto;
+        padding: .5em 0;
 	text-align: center;
 	text-transform: uppercase;
 	width: 90%;
@@ -170,7 +176,7 @@ nav ul.nav a:hover, .on {
 	font-size: 1.2em;
 	letter-spacing: .1em;
 	line-height: 1.5em;
-	padding: 0;
+	padding: .5em 0;
 	text-transform: none;
 }
 
@@ -184,8 +190,8 @@ nav ul.nav a:hover, .on {
 .content > .text > .hr {
 	background-color: #fff;
 	display: block;
-	border-radius: 1px;
-	height: 1px;
+	border-radius: 2px;
+	height: 2px;
 	width: 50px;
 	margin: 1em auto;
 }
@@ -248,6 +254,11 @@ nav ul.nav a:hover, .on {
 	}
 }
 
+/* -- SECTIONS -- */
+#about {
+        text-align: center;
+}
+
 /* --- PROJECTS --- */
 @media (min-width: 768px) {
 	.text#projects {
@@ -295,8 +306,7 @@ nav ul.nav a:hover, .on {
 footer {
 	bottom: 0;
 	font-size: 1em;
-	height: 75px;
-	opacity: .5;
+	height: 50px;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -311,21 +321,11 @@ footer {
 .social {
 	color: #eee;
 	font-size: 31px;
-	width: 31px;
+	opacity: .5;
+	width: 1.2em;
+}
+.social:hover {
+        color: #fff;
+        opacity: 1;
 }
 
-.circle {
-	border: none;
-	border-radius: 31px;
-	color: #eee;
-}
-
-#github:hover {
-	color: #4183c4;
-}
-#flickr:hover {
-	color: #ff0084;
-}
-#linkedin:hover {
-	color: #86888a;
-}
